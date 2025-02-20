@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("https://quizappbackend-ten.vercel.app/quizes", { withCredentials: true })
+      .get("https://phenomenal-lokum-452652.netlify.app/quizes", { withCredentials: true })
       .then((response) => {
         console.log(response.data);
         setquizes(response.data);
