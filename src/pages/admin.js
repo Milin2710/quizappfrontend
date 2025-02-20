@@ -31,7 +31,7 @@ export default function Admin() {
   useEffect(() => {
     // Fetch quiz data from the backend
     axios
-      .get("http://localhost:4000/quiz-attempts") // Make sure this endpoint returns the quiz attempt data
+      .get("https://quizappbackend-ten.vercel.app/quiz-attempts") // Make sure this endpoint returns the quiz attempt data
       .then((response) => {
         setQuizData(response.data);
         console.log(quizData);
@@ -66,7 +66,7 @@ export default function Admin() {
     setLoading(true);
     axios
       .post(
-        "http://localhost:4000/addquiz",
+        "https://quizappbackend-ten.vercel.app/addquiz",
         {
           quizname,
           quizdesc,
